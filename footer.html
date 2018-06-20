@@ -1,0 +1,73 @@
+<footer>
+    <div class = "footer">
+        <div class="row">
+            <dl>
+                <dt>博客</dt>
+                    
+                                              
+                    </dl>
+                    <dl>
+                        <dt>日志</dt>
+                        </dl>
+                    <dl>
+                        <dt>联系我</dt>
+                        <dd>
+                            <a class="email-link" href="mailto:support@360overseas.com">QQ1120765532</a>
+                        </dd>
+                        <dd>
+                            <a href="//www.360totalsecurity.com/zh-cn/about/">微信：不能讲</a>
+                        </dd>
+                    </dl>
+                </div>
+                
+                <div class="row">
+                    <span class="copyright">版权所有，禁止抄袭！！</span>
+                </div>
+            </div>
+        </footer>
+    
+      
+     
+        <script>
+        $(function($){
+            $('[data-ga]').click(function() {
+                var e = $(this).attr('data-ga').split('|');
+                ga('send', 'event', e[0], e[1], e[2]);
+            });
+
+
+        });
+
+        $(function() {
+          'use strict';
+
+          var $window = $(window);
+
+          $window.scroll(checkAnchorBar);
+
+          checkAnchorBar();
+
+          function checkAnchorBar() {
+            var $anchorBar = $('.anchor-bar');
+            var scrollTop = $window.scrollTop();
+
+            var $anchorStartElem = $('header');
+            var attachedClass = 'attached';
+
+            var threshold = $anchorStartElem.offset().top + $anchorStartElem.height();
+
+            if (!$anchorBar.hasClass(attachedClass) && scrollTop >= threshold) {
+              $anchorBar.addClass(attachedClass);
+            } else if ($anchorBar.hasClass(attachedClass) && scrollTop < threshold) {
+              $anchorBar.removeClass(attachedClass);
+            }
+          }
+        });
+    </script>
+    
+    
+    <div id="fb-root"></div>
+
+   
+    </body>
+</html>
